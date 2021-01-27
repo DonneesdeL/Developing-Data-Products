@@ -1,0 +1,28 @@
+---
+title: "RMarkdown and Leaflet"
+author: "Elle Gotladera"
+date: "1/28/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# January 28,2021
+
+## 
+A web page created using R Markdown featuring a map with the use of Leaflet.
+
+
+## Assignment:
+
+```{r}
+library(leaflet)
+```
+
+```{r}
+m_map <- leaflet() %>% addTiles()   
+m_map <- m_map %>% addMarkers(lat= 14.60916, lng= 120.99265, popup="I was here")
+m_map  
+```
